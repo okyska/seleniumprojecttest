@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
+<suite name="TestNG Example">
+   <!-- <parameter name="username" value="seleniumguru"></parameter>-->
+    <!--<parameter name="password" value="test1234"></parameter>-->
+    <test name="Regression Test" parallel="classes" thread-count="3">
+        <classes>
+            <class name="dockerswarm.Grid_test_chrome"/>
+            <class name="dockerswarm.Grid_test_firefox"/>
+            <class name="dockerswarm.Grid_test_firefox2"/>
+            <class name="dockerswarm.Grid_test_firefox3"/>
+        </classes>
+    </test>
+</suite>
